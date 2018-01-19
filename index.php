@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
-
+<div class="container">
 <h2>J-HAQ身体機能障害指数 計算機</h2>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -262,91 +262,97 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 ?>
 
 <p>★この１週間の日常生活で、それぞれの質問に当てはまるところに１つだけ、選択してください。<br>必ず全て回答してください。</p>
-<p><br><br>下記の①-④の選択肢で下記の1.-7.の器具や自助具を日常的に使っていたり、他人の手助けが必要であれば、"問題◯では補助を利用"にチェックをつけてください</p>
+<p><br><br>◎下記の①-④の選択肢で下記の1.-7.の器具や自助具を日常的に使っていたり、他人の手助けが必要であれば、"問題◯では補助を利用"にチェックをつけてください</p>
 <p>１. 身支度に使う器具（ボタン通し、ジッパーにかけるひもなど）２. 特殊な椅子　３. 特別な器具、自助具　4. ステッキ ５. 松葉杖 ６. 歩行器　７. 車いす<br><br><br><br></p>
 
+
+
+    <form action="" method="POST">
+        <div class="form-group">
 <p>① 衣服の着脱と身支度（Dressing）</p>
 <p>靴ひもを結び、ボタン掛けも含め自分で身支度ができますか?</p>
-
-<form action="" method="POST">
-    <input type="radio" name="aa" value="0"> なんの困難もなくできる
-    <input type="radio" name="aa" value="1"> 少し困難だができる　
-    <input type="radio" name="aa" value="2"> かなり困難だができる　
-    <input type="radio" name="aa" value="3"> まったくできない　
-
+ 
+   <label> <input type="radio" name="aa" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="aa" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="aa" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="aa" value="3"> まったくできない</label> 　
+ 
 
 <p>自分で洗髪ができますが?</p>
 
-    <input type="radio" name="ab" value="0"> なんの困難もなくできる
-    <input type="radio" name="ab" value="1"> 少し困難だができる　
-    <input type="radio" name="ab" value="2"> かなり困難だができる　
-    <input type="radio" name="ab" value="3"> まったくできない<br><br>　
-    <input type='checkbox' name='ah' value='1'>問題①では補助を利用<br><br><br><br>
-
+   <label> <input type="radio" name="ab" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="ab" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="ab" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="ab" value="3"> まったくできない</label> <br><br>　
+    <label><input type='checkbox' name='ah' value='1'>問題①では補助を利用</label><br><br><br><br>
+    
 
 
 
 <p>② 起立（Arising）</p>
 <p>椅子（肘かけがなく背もたれが垂直）から立ち上がれますか?</p>
 
-    <input type="radio" name="ba" value="0"> なんの困難もなくできる
-    <input type="radio" name="ba" value="1"> 少し困難だができる　
-    <input type="radio" name="ba" value="2"> かなり困難だができる　
-    <input type="radio" name="ba" value="3"> まったくできない　　
+   <label> <input type="radio" name="ba" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="ba" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="ba" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="ba" value="3"> まったくできない</label> 　　
 
 
 <p>ベッドまたは布団からの就寝、起床の動作ができますか?</p>
-<p>（日常使っている寝具につきお答えください）</p>
+<p>（日常使っている 寝具につきお答えください）</p>
 
-    <input type="radio" name="bb" value="0"> なんの困難もなくできる
-    <input type="radio" name="bb" value="1"> 少し困難だができる　
-    <input type="radio" name="bb" value="2"> かなり困難だができる　
-    <input type="radio" name="bb" value="3"> まったくできない<br>　<br>　
-    <input type='checkbox' name='bh' value='1'>問題②では補助を利用<br><br><br><br>
+   <label> <input type="radio" name="bb" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="bb" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="bb" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="bb" value="3"> まったくできない</label> <br>　<br>　
+   
+    <label><input type='checkbox' name='bh' value='1'>問題②では補助を利用</label><br><br><br><br>
 
 
 <p>③ 食事（Eating）</p>
 <p>お箸を使ってごはんを口に運べますか?</p>
 
-    <input type="radio" name="ca" value="0"> なんの困難もなくできる
-    <input type="radio" name="ca" value="1"> 少し困難だができる　
-    <input type="radio" name="ca" value="2"> かなり困難だができる　
-    <input type="radio" name="ca" value="3"> まったくできない　　
+   <label> <input type="radio" name="ca" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="ca" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="ca" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="ca" value="3"> まったくできない</label> 　　
 
 
 <p>いっぱい水の入ったコップを口元まで運べますか?</p>
 
-    <input type="radio" name="cb" value="0"> なんの困難もなくできる
-    <input type="radio" name="cb" value="1"> 少し困難だができる　
-    <input type="radio" name="cb" value="2"> かなり困難だができる　
-    <input type="radio" name="cb" value="3"> まったくできない　　
+   <label> <input type="radio" name="cb" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="cb" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="cb" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="cb" value="3"> まったくできない</label> 　　
 
 
-<p>新しい牛乳の紙パックの口を開けることができますか?</p>
+<p>新しい牛乳の紙パックの口を開ける</label> ことができますか?</p>
 
-    <input type="radio" name="cc" value="0"> なんの困難もなくできる
-    <input type="radio" name="cc" value="1"> 少し困難だができる　
-    <input type="radio" name="cc" value="2"> かなり困難だができる　
-    <input type="radio" name="cc" value="3"> まったくできない<br>　<br>　
-    <input type='checkbox' name='ch' value='1'>問題③では補助を利用<br><br><br><br>
+   <label> <input type="radio" name="cc" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="cc" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="cc" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="cc" value="3"> まったくできない</label> <br>　<br>　
+   
+    <label><input type='checkbox' name='ch' value='1'>問題③では補助を利用</label><br><br><br><br>
 
 
 <p>④ 歩行（Walking）</p>
 <p>戸外の平坦な道を歩けますか?</p>
 
-    <input type="radio" name="da" value="0"> なんの困難もなくできる
-    <input type="radio" name="da" value="1"> 少し困難だができる　
-    <input type="radio" name="da" value="2"> かなり困難だができる　
-    <input type="radio" name="da" value="3"> まったくできない　　
+   <label> <input type="radio" name="da" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="da" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="da" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="da" value="3"> まったくできない</label> 　　
 
 
 <p>階段を５段上がれますか?</p>
 
-    <input type="radio" name="db" value="0"> なんの困難もなくできる
-    <input type="radio" name="db" value="1"> 少し困難だができる　
-    <input type="radio" name="db" value="2"> かなり困難だができる　
-    <input type="radio" name="db" value="3"> まったくできない<br>　<br>　
-    <input type='checkbox' name='dh' value='1'>問題④では補助を利用<br><br><br><br>
+   <label> <input type="radio" name="db" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="db" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="db" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="db" value="3"> まったくできない</label> <br>　<br>　
+   
+    <label><input type='checkbox' name='dh' value='1'>問題④では補助を利用</label><br><br><br><br>
 
 
 
@@ -360,45 +366,47 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 <p>⑤ 衛生（Hygiene）</p>
 <p>浴槽につかることができますか?</p>
 
-    <input type="radio" name="ea" value="0"> なんの困難もなくできる
-    <input type="radio" name="ea" value="1"> 少し困難だができる　
-    <input type="radio" name="ea" value="2"> かなり困難だができる　
-    <input type="radio" name="ea" value="3"> まったくできない　　
+   <label> <input type="radio" name="ea" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="ea" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="ea" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="ea" value="3"> まったくできない</label> 　　
 
 
 <p>体を洗いタオルで拭くことができますか?</p>
 
-    <input type="radio" name="eb" value="0"> なんの困難もなくできる
-    <input type="radio" name="eb" value="1"> 少し困難だができる　
-    <input type="radio" name="eb" value="2"> かなり困難だができる　
-    <input type="radio" name="eb" value="3"> まったくできない　　
+   <label> <input type="radio" name="eb" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="eb" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="eb" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="eb" value="3"> まったくできない</label> 　　
 
 
 <p>洋式トイレに座ったり立ったりできますか?</p>
 
-    <input type="radio" name="ec" value="0"> なんの困難もなくできる
-    <input type="radio" name="ec" value="1"> 少し困難だができる　
-    <input type="radio" name="ec" value="2"> かなり困難だができる　
-    <input type="radio" name="ec" value="3"> まったくできない<br>　<br>　
-    <input type='checkbox' name='eh' value='1'>問題⑤では補助を利用<br><br><br><br>
+   <label> <input type="radio" name="ec" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="ec" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="ec" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="ec" value="3"> まったくできない</label> <br>　<br>　
+   
+    <label><input type='checkbox' name='eh' value='1'>問題⑤では補助を利用</label><br><br><br><br>
 
 
 <p>⑥ とどく範囲（Reach）</p>
 <p>頭上の棚に２リットル入りのペットボトルがあった場合、<br>それを下に降ろせますか?</p>
 
-    <input type="radio" name="fa" value="0"> なんの困難もなくできる
-    <input type="radio" name="fa" value="1"> 少し困難だができる　
-    <input type="radio" name="fa" value="2"> かなり困難だができる　
-    <input type="radio" name="fa" value="3"> まったくできない　　
+   <label> <input type="radio" name="fa" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="fa" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="fa" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="fa" value="3"> まったくできない</label> 　　
 
 
 <p>腰を曲げて床にある衣服を拾い上げられますか?</p>
 
-    <input type="radio" name="fb" value="0"> なんの困難もなくできる
-    <input type="radio" name="fb" value="1"> 少し困難だができる　
-    <input type="radio" name="fb" value="2"> かなり困難だができる　
-    <input type="radio" name="fb" value="3"> まったくできない<br>　<br>　
-    <input type='checkbox' name='fh' value='1'>問題⑥では補助を利用<br><br><br><br>
+   <label> <input type="radio" name="fb" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="fb" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="fb" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="fb" value="3"> まったくできない</label> <br>　<br>　
+   
+    <label><input type='checkbox' name='fh' value='1'>問題⑥では補助を利用</label><br><br><br><br>
 
 
 
@@ -406,58 +414,60 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 <p>⑦ 握力（Grip）</p>
 <p>自動車のドアを開けられますか?</p>
 
-    <input type="radio" name="ga" value="0"> なんの困難もなくできる
-    <input type="radio" name="ga" value="1"> 少し困難だができる　
-    <input type="radio" name="ga" value="2"> かなり困難だができる　
-    <input type="radio" name="ga" value="3"> まったくできない　　
+   <label> <input type="radio" name="ga" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="ga" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="ga" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="ga" value="3"> まったくできない</label> 　　
 
 
 <p>広口ビンのふたを開けられますか?（すでに一度開けてあるもの）</p>
 
-    <input type="radio" name="gb" value="0"> なんの困難もなくできる
-    <input type="radio" name="gb" value="1"> 少し困難だができる　
-    <input type="radio" name="gb" value="2"> かなり困難だができる　
-    <input type="radio" name="gb" value="3"> まったくできない　　
+   <label> <input type="radio" name="gb" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="gb" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="gb" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="gb" value="3"> まったくできない</label> 　　
 
 
 <p>回転式の蛇口を開閉できますか?</p>
 
-    <input type="radio" name="gc" value="0"> なんの困難もなくできる
-    <input type="radio" name="gc" value="1"> 少し困難だができる　
-    <input type="radio" name="gc" value="2"> かなり困難だができる　
-    <input type="radio" name="gc" value="3"> まったくできない<br>　<br>　
-    <input type='checkbox' name='gh' value='1'>問題⑦では補助を利用<br><br><br><br>
+   <label> <input type="radio" name="gc" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="gc" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="gc" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="gc" value="3"> まったくできない</label> <br>　<br>　
+   
+    <label><input type='checkbox' name='gh' value='1'>問題⑦では補助を利用</label><br><br><br><br>
 
 
 <p>⑧ 家事や雑用（Activities）</p>
 <p>用事や買い物にでかけることができますか?</p>
 
-    <input type="radio" name="ha" value="0"> なんの困難もなくできる
-    <input type="radio" name="ha" value="1"> 少し困難だができる　
-    <input type="radio" name="ha" value="2"> かなり困難だができる　
-    <input type="radio" name="ha" value="3"> まったくできない　　
+   <label> <input type="radio" name="ha" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="ha" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="ha" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="ha" value="3"> まったくできない</label> 　　
 
 
 <p>自動車の乗り降りができますか?</p>
 
-    <input type="radio" name="hb" value="0"> なんの困難もなくできる
-    <input type="radio" name="hb" value="1"> 少し困難だができる　
-    <input type="radio" name="hb" value="2"> かなり困難だができる　
-    <input type="radio" name="hb" value="3"> まったくできない　　
+   <label> <input type="radio" name="hb" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="hb" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="hb" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="hb" value="3"> まったくできない</label> 　　
 
 
 <p>そうじ機をかけたり、庭仕事などの家事ができますか?</p>
 
-    <input type="radio" name="hc" value="0"> なんの困難もなくできる
-    <input type="radio" name="hc" value="1"> 少し困難だができる　
-    <input type="radio" name="hc" value="2"> かなり困難だができる　
-    <input type="radio" name="hc" value="3"> まったくできない<br>　<br>　
-    <input type='checkbox' name='hh' value='1'>問題⑧では補助を利用<br><br><br><br>
+   <label> <input type="radio" name="hc" value="0"> なんの困難もなくできる</label> 
+   <label> <input type="radio" name="hc" value="1"> 少し困難だができる</label> 　
+   <label> <input type="radio" name="hc" value="2"> かなり困難だができる</label> 　
+   <label> <input type="radio" name="hc" value="3"> まったくできない</label> <br>　<br>　
+   
+    <label><input type='checkbox' name='hh' value='1'>問題⑧では補助を利用</label><br><br><br><br>
 
-
+</div>
 
 <input type="submit" value="送信" >
 </form>
-
+</div>
 </body>
 </html>
