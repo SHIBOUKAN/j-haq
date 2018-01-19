@@ -117,7 +117,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
         else if($ab > $aa){
             $a=$ab;
         }
-        echo "$a\n";
+        //echo "$a\n";
     //2問目    
         if (1 == $bh){
             if(2 > $ba){
@@ -133,7 +133,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
         else if($bb > $ba){
             $b=$bb;
         }
-        echo "$b\n";
+        //echo "$b\n";
     //3問目
         if (1 == $ch){
             if(2 > $ca){
@@ -155,7 +155,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
       else if ($cc>$ca && $cc>$cb){
           $c=$cc;
       }
-        echo "$c\n";
+        //echo "$c\n";
     //4問目
     if (1 == $dh){
             if(2 > $da){
@@ -171,7 +171,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
         else if($db > $da){
             $d=$db;
         }
-        echo "$d\n";
+        //echo "$d\n";
     //5問目
      if (1 == $eh){
             if(2 > $ea){
@@ -193,7 +193,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
       else if ($ec>$ea && $ec>$eb){
           $e=$ec;
       }
-        echo "$e\n";
+        //echo "$e\n";
     //6問目
     if (1 == $fh){
             if(2 > $fa){
@@ -209,7 +209,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
         else if($fb > $fa){
             $f=$fb;
         }
-        echo "$f\n";
+        //echo "$f\n";
     //7問目
      if (1 == $gh){
             if(2 > $ga){
@@ -231,7 +231,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
       else if ($gc>$ga && $gc>$gb){
           $g=$gc;
       }
-        echo "$g\n";
+        //echo "$g\n";
     //8問目
      if (1 == $hh){
             if(2 > $ha){
@@ -253,19 +253,23 @@ echo date("Y/m/d H:i:s", time()) . "\n";
       else if ($hc>$ha && $hc>$hb){
           $h=$hc;
       }
-        echo "$h\n";
+        //echo "$h\n";
         
         //計算式
         $j=($a+$b+$c+$d+$e+$f+$g+$h)/8;
         echo 'あなたのJ-HAQスコアは';
         echo "$j";
+        echo "\n";
 ?>
 
-<p>★この１週間の日常生活で、それぞれの質問に当てはまるところに１つだけ、選択してください。<br>必ず全て回答してください。</p>
-<p><br><br>◎下記の①-④の選択肢で下記の1.-7.の器具や自助具を日常的に使っていたり、他人の手助けが必要であれば、"問題◯では補助を利用"にチェックをつけてください</p>
-<p>１. 身支度に使う器具（ボタン通し、ジッパーにかけるひもなど）２. 特殊な椅子　３. 特別な器具、自助具　4. ステッキ ５. 松葉杖 ６. 歩行器　７. 車いす<br><br><br><br></p>
-
-
+<br><br>
+<p>この１週間の日常生活で、それぞれの質問に当てはまるところに１つだけ、選択してください。<br>必ず全て回答してください。</p>
+<div class="panel panel-default">
+    <div class="panel-body">
+<p>◎下記の①-④の選択肢で下記の1.-7.の器具や自助具を日常的に使っていたり、他人の手助けが必要であれば、"問題◯では補助を利用"にチェックをつけてください</p>
+<p>１. 身支度に使う器具（ボタン通し、ジッパーにかけるひもなど）２. 特殊な椅子　３. 特別な器具、自助具　4. ステッキ ５. 松葉杖 ６. 歩行器　７. 車いす</p>
+ </div>
+</div>
 
     <form action="" method="POST">
         <div class="form-group">
@@ -359,9 +363,12 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 
 
 
+<div class="panel panel-default">
+     <div class="panel-body">
 <p>◎下記の⑤-⑧の選択肢で下記の1.-6.の器具や自助具を日常的に使っていたり、他人の手助けが必要であれば、"問題◯では補助を利用"にチェックをつけてください</p>
-<p>１. 浴槽のいす ２. 浴槽の手すり ３. 便座を高くした ４. トイレ内の手すり ５. 孫の手状の継ぎ手（マジックハンド）６. ビンの口を開ける器具<br><br><br><br></p>
-
+<p>１. 浴槽のいす ２. 浴槽の手すり ３. 便座を高くした ４. トイレ内の手すり ５. 孫の手状の継ぎ手（マジックハンド）６. ビンの口を開ける器具</p>
+ </div>
+ </div>
 
 <p>⑤ 衛生（Hygiene）</p>
 <p>浴槽につかることができますか?</p>
@@ -465,9 +472,8 @@ echo date("Y/m/d H:i:s", time()) . "\n";
     <label><input type='checkbox' name='hh' value='1'>問題⑧では補助を利用</label><br><br><br><br>
 
 </div>
-
 <button type="submit" class="btn btn-success">送信</button>
-<br><br>
+<br><br><br>
 </form>
 </div>
 </body>
