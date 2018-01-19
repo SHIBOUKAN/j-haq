@@ -466,7 +466,8 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 
 </div>
 
-<input type="submit" value="送信" >
+<button type="submit" class="btn btn-success">送信</button>
+<br><br>
 </form>
 </div>
 </body>
