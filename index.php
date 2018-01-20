@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="container">
-<h2>J-HAQ身体機能障害指数 計算機</h2>
+<h1>J-HAQ身体機能障害指数 計算機</h1>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -32,6 +32,8 @@ echo "アクセス日時:";
 echo date("Y/m/d H:i:s", time()) . "\n";
 ?>
 </p>
+<div class="panel panel-default">
+  <div class="panel-body">
 <?php   $aa = '';
         $ab = '';
         $ah = '';
@@ -257,10 +259,11 @@ echo date("Y/m/d H:i:s", time()) . "\n";
         
         //計算式
         $j=($a+$b+$c+$d+$e+$f+$g+$h)/8;
-        echo 'あなたのJ-HAQスコアは';
-        echo "$j";
+        echo " <font size=6 >あなたのJ-HAQスコアは</font>";
+        echo " <font color='red' size=7 >$j</font>";
         echo "\n";
 ?>
+</div></div>
 
 <br><br>
 <p>この１週間の日常生活で、それぞれの質問に当てはまるところに１つだけ、選択してください。<br>必ず全て回答してください。</p>
