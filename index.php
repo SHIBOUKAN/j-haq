@@ -259,7 +259,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
         
         //計算式
         $j=($a+$b+$c+$d+$e+$f+$g+$h)/8;
-        if ($j=0)
+        if ($j==0)
         {
             echo "<font size=6 >J-HAQスコアを計測するために下記の質問に回答してください。</font>";
             echo "\n";
