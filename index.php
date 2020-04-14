@@ -34,7 +34,8 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 </p>
 <div class="panel panel-default">
   <div class="panel-body">
-<?php   $aa = '';
+<?php   $z = 0;
+        $aa = '';
         $ab = '';
         $ah = '';
         $a  = '';
@@ -257,9 +258,10 @@ echo date("Y/m/d H:i:s", time()) . "\n";
       }
         //echo "$h\n";
         
-        //計算式
+        //集約計算式
         $j=($a+$b+$c+$d+$e+$f+$g+$h)/8;
-        if ($j==0)
+        //冒頭メッセージ
+        if ($j==0 && $z==0)
         {
             echo "<font size=6 >J-HAQスコアを計測するために下記の質問に回答してください。</font>";
             echo "\n";
@@ -270,6 +272,16 @@ echo date("Y/m/d H:i:s", time()) . "\n";
             echo " <font color='red' size=7 >$j</font>";
             echo "\n";
         }
+
+
+      //submitボタン押した回数検出
+        if(isset($_POST['z'])){
+            $z = $_POST['z'];
+        }
+        if(isset($_POST['plus'])){
+            $z++;
+        }
+
 ?>
 </div></div>
 
@@ -483,7 +495,16 @@ echo date("Y/m/d H:i:s", time()) . "\n";
     <label><input type='checkbox' name='hh' value='1'>問題⑧では補助を利用</label><br><br><br><br>
 
 </div>
+
+<form action="" method="POST">
+     <input type="hidden" name="a" value="<?=$z?>">
+     <input type="submit" name="plus" value="plus">
+ </form>
+<?=$z?>
+
 <button type="submit" class="btn btn-success">送信</button>
+
+
 <br><br><br>
 </form>
 </div>
