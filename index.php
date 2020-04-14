@@ -496,11 +496,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 
 </div>
 
-<form action="" method="POST">
-     <input type="hidden" name="a" value="<?=$z?>">
-     <input type="submit" name="plus" value="plus">
- </form>
-<?=$z?>
+     <input type="hidden" name="z" value="<?=$z?>">
 
 <button type="submit" class="btn btn-success">送信</button>
 
