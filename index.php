@@ -257,6 +257,14 @@ echo date("Y/m/d H:i:s", time()) . "\n";
           $h=$hc;
       }
         //echo "$h\n";
+
+        //submitボタン押した回数検出
+        if(isset($_POST['z'])){
+            $z = $_POST['z'];
+        }
+        if(isset($_POST['plus'])){
+            $z++;
+        }
         
         //集約計算式
         $j=($a+$b+$c+$d+$e+$f+$g+$h)/8;
@@ -274,13 +282,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
         }
 
 
-      //submitボタン押した回数検出
-        if(isset($_POST['z'])){
-            $z = $_POST['z'];
-        }
-        if(isset($_POST['plus'])){
-            $z++;
-        }
+      
 
 ?>
 </div></div>
@@ -497,6 +499,7 @@ echo date("Y/m/d H:i:s", time()) . "\n";
 </div>
 
      <input type="hidden" name="z" value="<?=$z?>">
+     <input type="hidden" name="plus" value="plus">
 
 <button type="submit" class="btn btn-success">送信</button>
 
